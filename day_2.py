@@ -7,9 +7,6 @@ with open("instruction_toy.txt") as instruction:
 	x = 1
 	y = 1
 	for inst in instruction:
-		
-		#aux_x = 1
-		#aux_y = 1
 		for i in inst:
 			if i == 'U':
 				y = y - 1
@@ -38,9 +35,7 @@ with open("instruction_toy.txt") as instruction:
 					coordinates.append((y,x))
 				else:
 					x = x - 1
-					
-					
-		#	print (y,x), i, KEYPAD[y][x]
+
 		c = coordinates[-1]
 		print KEYPAD[c[0]][c[1]], c
 		print coordinates[-1]
@@ -90,10 +85,3 @@ with open("instruction_toy.txt") as instruction:
 		a = coordinates[-1]
 		print KEYPAD2 [a[0]][a[1]], a
 		print coordinates[-1]
-
-
-
-#def check_limits(y_local,x_local):
-#		y_local >= 0 and y_local <= 2
-#		x_local >= 0 and x_local <= 2
-			
